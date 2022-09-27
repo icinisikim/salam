@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" style="transition: .3s ease;">
+<head>
+  <title>Space Comp - Takes You To Space</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="mainPage.css">
+  <link rel="shortcut icon" href="images/Screenshot_2-removebg-preview.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="mainPage.js" defer></script>
+  <script src="index.js" defer></script>
+  <script>
+    function myFunction() {
+    var x = document.getElementById("password");
+    if (x.type === "password") {
+      x.type = "text";
+    } else {
+      x.type = "password";
+    }
+  }
+
+  function myfunction() {
+    var x = document.getElementById("pass");
+    if (x.type === "password") {
+      x.type = "text";
+    } else {
+      x.type = "password";
+    }
+  }
+  function startShp(){
+    window.location.href = "startShopping.html";
+  }
+  </script>
+</head>
+<body  data-aos="fade-right" style="height: 2000px; position: absolute;">
+  <div class="alert alert-success" style="display: none;" id="success-logout-alert">You Exited Successfully</div>
+  <div class="alert alert-success" style="display: none;" id="login-success-alert">You Loged In Successfully</div>
+  <div id="nav-menu" class="nav-menu" data-aos="fade-right">
+    <div class="allLogo">
+      <img  id="logo" width="70" data-aos="fade-right" height="62" src="images/Screenshot_2-removebg-preview.png" alt="">
+      <p id="name" data-aos="fade-right">Space Comp</p>
+    </div>
+    <a onclick="onClearLocalStorage()" style="position: relative; left: 330px; position: relative; bottom: 10px;" data-aos="fade-right" id="reset">Reset Data</a>
+    <a data-aos="fade-right" style="position: relative; left: 15px;"  id="exit" onclick="onLogOut()">Exit</a>
+    <div data-aos="fade-right" class="dropdown" style="transition: .3s ease;">
+      <a data-aos="fade-right" href="myComputers.html" id="comp" style="transition: .3s ease; position: relative; left: 200px; top: -40px;">Computers</a>
+      <img data-aos="fade-right" id="isare" style="margin-left: 280px; transition: .3s ease; position: relative; top: -45px; left: -70px;" width="20px" height="22px" src="images/white-drop-down-arrow-11562884289ujhzrp5rwy-removebg-preview.png" alt="">
+      <div data-aos="fade-right" class="hover-menu" style="transition: .3s ease;">
+        <ul data-aos="fade-right" class="menu1">
+          <li data-aos="fade-right">Dell</li>                        
+          <li data-aos="fade-right">HP</li>
+          <li data-aos="fade-right">Huawei</li>
+          <li data-aos="fade-right">AlienWare</li>
+          <li data-aos="fade-right">Nokia</li>
+          <li data-aos="fade-right">Apple</li>
+          <li data-aos="fade-right">Asus</li>
+          <li data-aos="fade-right">MSI</li>
+        </ul>
+        <ul data-aos="fade-right" class="menu2">
+          <li data-aos="fade-right">Microsoft</li>
+          <li data-aos="fade-right">Samsung</li>
+          <li data-aos="fade-right">Lenovo</li>
+          <li data-aos="fade-right">Acer</li>
+          <li data-aos="fade-right">Razer</li>
+          <li data-aos="fade-right">Nexus</li>
+          <li data-aos="fade-right">Fijitsu</li>
+          <li data-aos="fade-right">Toshiba</li>
+        </ul>
+        <ul data-aos="fade-right" class="menu3">
+          <li data-aos="fade-right">LG</li>
+          <li data-aos="fade-right">Emachines</li>
+          <li data-aos="fade-right">Casper</li>
+          <li data-aos="fade-right">Razer</li>
+          <li data-aos="fade-right">Sony</li>
+          <li data-aos="fade-right">Monster</li>
+          <li data-aos="fade-right">Mis</li>
+          <li data-aos="fade-right">IBM</li>
+          </ul>
+          <ul data-aos="fade-right" class="menu4">
+          <li data-aos="fade-right">Gigabyte</li>
+          <li data-aos="fade-right">Epson</li>
+          <li data-aos="fade-right">Canon</li>
+          <li data-aos="fade-right">HCL</li>
+          <li data-aos="fade-right">Compaq</li>
+          <li data-aos="fade-right">HeroBook</li>
+          <li data-aos="fade-right">Corebook</li>
+          <li data-aos="fade-right">Archos</li>
+          </ul>
+      </div>
+      </div>
+      
+      <button data-aos="fade-right" id="start-shp" onclick="startShp()">Start Shopping</button>
+      <div style="display: block;" class="modes">
+        <div onclick="dark()" id="darki" class="dark"><img style="position: relative; top: 5px; left: 5px;" width="40px" height="40px" src="images/360_F_165479250_xhiSVoJOhKS9BbptDqqVv39YotMi3hGq-removebg-preview.png" alt=""></div>
+        <div onclick="light()" id="lighti" class="light"><img style="position: relative; right: 3px; bottom: 3px;" width="55px" height="55px" src="images/simple-sun-minimal-black-white-outline-icon-flat-vector-illustration-isolated-background-189556463-removebg-preview.png" alt=""></div>
+      </div>
+    </div>
+    <h1 id="slogan" style="color: white;" data-aos="fade-right">
+      Our Computers Will Take You To Space
+    </h1>
+    <input required placeholder="Enter Username" type="text" name="" id="mailInput" data-aos="fade-right">
+    <a href="login.html" id="get-started" data-aos="fade-right">Log In</a>
+    <h1 id="top" data-aos="fade-right">Top Selling</h1>
+    <div class="arxa-fon" data-aos="fade-right">
+        <input data-aos="fade-right" class="radioCar" type="radio" name="position" checked />
+        <input data-aos="fade-right" class="radioCar" type="radio" name="position" />
+        <input data-aos="fade-right" class="radioCar" type="radio" name="position" />
+        <input data-aos="fade-right" class="radioCar" type="radio" name="position" />
+        <input data-aos="fade-right" class="radioCar" type="radio" name="position" />
+        <main data-aos="fade-right" id="carousel">
+          <div class="item"><img style="border-radius: 30px;  box-shadow: 7px 7px 10px black;" src="images/alien.jpg" width="600px" height="400px" alt=""></div>
+          <div class="item"><img src="images/dell.png" width="600px" height="400px" style="border-radius: 30px; box-shadow: 7px 7px 10px black;" alt=""></div>
+          <div class="item"><img src="images/dell2.jpg" width="600px" height="400px" style="border-radius: 30px; box-shadow: 7px 7px 10px black;" alt=""></div>
+          <div class="item"><img src="images/huawei.avif" width="600px" height="400px" style="border-radius: 30px; box-shadow: 7px 7px 10px black;" alt=""></div>
+          <div class="item"><img src="images/nokia.jpg" width="600px" height="400px" style="border-radius: 30px; box-shadow: 7px 7px 10px black;" alt=""></div>
+          <main>
+    </div>
+    <h1 data-aos="fade-right" id="brand-ch" style="color: white;">Top Selling Brands</h1>
+    <div data-aos="fade-right" class="container" style="margin-left: 650px;">
+      <div class="carousel">
+        <div class="carousel__face"><img src="images/Dell-Logo.png" alt=""></div>
+        <div class="carousel__face"><img src="images/HP-Logo.png" alt=""></div>
+        <div class="carousel__face"><img src="images/Huawei-Logo-2018-present-removebg-preview.png" alt=""></div>
+        <div class="carousel__face"><img style="padding-left: 50px; width: 250px;" src="images/merchant_image-merchant_logo_large.png" alt=""></div>
+        <div class="carousel__face"><img src="images/kisspng-nokia-mobile-phones-bell-labs-5g-smartphone-flat-logo-5b0fde515cd4c9.3580271715277666093803-removebg-preview.png" alt=""></div>
+        <div class="carousel__face"><img style="padding-left: 50px; width: 250px;"  src="images/Apple-Logo-black.png" alt=""></div>
+        <div class="carousel__face"><img style="padding-left: 50px; width: 250px;"  src="images/png-clipart-asus-logo-computer-brands-brand-logo-thumbnail-removebg-preview.png" alt=""></div>
+        <div class="carousel__face"><img src="images/MSI-Logo-2011-2019.png" alt=""></div>
+        <div class="carousel__face"><img src="images/mc.png"  alt="" style="padding-left: 50px; width: 250px;"></div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>
